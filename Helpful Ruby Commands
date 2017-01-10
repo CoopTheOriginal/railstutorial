@@ -1,0 +1,14 @@
+.irb # Launch Ruby Shell
+
+rails db:migrate # Migrate DB Before Rails 5, you'd run 'rake db:migrate'
+rails db:rollback # Undo migration
+rails db:migrate VERSION=0 # Goes all the way back to the beginning
+
+rake test # Run Tests Before Rails 5, you'd run rake test
+
+
+rails generate controller StaticPages home help # Generate StaticPages scaffolding
+rails destroy  controller StaticPages home help # Destory StaticPages scaffolding
+
+rails generate model User name:string email:string # Create scaffolding for User
+rails destroy model User # Undo scaffolding for User
